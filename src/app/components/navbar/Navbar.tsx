@@ -17,7 +17,7 @@ const Navbar = () => {
             <div>CICLOS</div>
             <div>MATRICULAS EN LINEA</div>
             <div>RECURSOS</div>
-            <div>SEDES</div>
+            <div>COLEGIO</div>
             <div>CONÓCENOS</div>
             <div>CONTACTO</div>
           </div>

@@ -1,4 +1,5 @@
 import ClientOnly from './components/ClientOnly'
+import Redes from './components/Redes'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
@@ -22,9 +23,10 @@ export default function RootLayout({
         <ClientOnly>
           <Navbar />
         </ClientOnly>
-        <div className="pb-20 pt-28">
+        <div className="w-full h-full min-h-[100vh  ] pb-20 pt-28 bg-gradient-to-b from-blue-500 to-yellow-300">
           {children}
         </div>
+        <Redes />
       </body>
     </html>
   )
