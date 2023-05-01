@@ -27,17 +27,17 @@ const Redes = () => {
       <div className='ml-1 w-full h-full flex flex-col g-3 justify-around items-center p-2'>
         <FaFacebook
           style={{ color: 'blue', fontSize: '2em' }}
-          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer'
+          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer transition-all'
           onClick={() => { router.push('https://www.facebook.com/profile.php?id=100063746628373') }}
         />
         <FaFacebookMessenger
           style={{ color: 'blue', fontSize: '2em' }}
-          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer'
+          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer transition-all'
           onClick={() => { }}
         />
         <FaWhatsapp
           style={{ color: 'blue', fontSize: '2em' }}
-          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer'
+          className='hover:border-blue-950 hover:border-b-2 hover:cursor-pointer transition-all'
           onClick={() => { }}
         />
         <FiPhone

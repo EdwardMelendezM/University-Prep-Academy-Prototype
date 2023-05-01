@@ -6,7 +6,6 @@ import Logo from './components/Logo'
 const Home = () => {
   return (
     <Container>
-
       <Ingresantes />
       <SliderHorizontal />
       <Logo />

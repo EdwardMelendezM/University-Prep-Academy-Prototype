@@ -25,12 +25,15 @@ export default function RootLayout ({
         <ClientOnly>
           <Navbar />
         </ClientOnly>
-        <div className='w-full h-full min-h-[100vh] pt-28 bg-gradient-to-b from-blue-500 to-yellow-300'>
+        <div className='w-full h-full min-h-[100vh] pt-28  absolute top-0 left-0 bg-custom-bg bg-custom-opacity bg-cover'>
+          {/* bg-gradient-to-b from-blue-500 to-yellow-300 */}
           {children}
         </div>
-        <Redes />
-        <hr />
-        <Footer />
+        <ClientOnly>
+          <Redes />
+          <hr />
+          <Footer />
+        </ClientOnly>
       </body>
     </html>
   )
