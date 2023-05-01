@@ -1,3 +1,4 @@
+import React from 'react'
 import ClientOnly from './components/ClientOnly'
 import Footer from './components/Footer'
 import Redes from './components/Redes'
@@ -13,18 +14,18 @@ export const metadata = {
   keywords: 'academia pre universitaria, academia cusco, academia unsaac'
 }
 
-export default function RootLayout({
-  children,
+export default function RootLayout ({
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
+    <html lang='es'>
       <body className={nunito.className}>
         <ClientOnly>
           <Navbar />
         </ClientOnly>
-        <div className="w-full h-full min-h-[100vh] pt-28 bg-gradient-to-b from-blue-500 to-yellow-300">
+        <div className='w-full h-full min-h-[100vh] pt-28 bg-gradient-to-b from-blue-500 to-yellow-300'>
           {children}
         </div>
         <Redes />

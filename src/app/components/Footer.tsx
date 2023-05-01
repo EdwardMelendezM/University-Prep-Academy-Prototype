@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="
+    <div className='
       w-full
       h-[5px]
       p-6
@@ -12,11 +12,12 @@ const Footer = () => {
       text-md
       sm:text-xl
       text-white
-    ">
+    '
+    >
       Av. la cultura  - Al frente de la Unsaac  |   telefono 545454
 
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

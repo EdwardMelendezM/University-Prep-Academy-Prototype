@@ -3,7 +3,7 @@ const Page = () => {
     <div>
       This is about
     </div>
-  );
+  )
 }
 
-export default Page;
+export default Page

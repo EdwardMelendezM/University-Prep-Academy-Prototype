@@ -1,3 +1,4 @@
+import React from 'react'
 interface SliderHorizontalProps {
   text?: string
   bg?: string
@@ -23,10 +24,11 @@ const SliderHorizontal: React.FC<SliderHorizontalProps> = ({
       text-center
       border-0
       rounded-xl
-    `}>
+    `}
+    >
       {text}
-    </div >
-  );
+    </div>
+  )
 }
 
-export default SliderHorizontal;
+export default SliderHorizontal
