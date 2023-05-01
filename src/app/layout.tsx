@@ -5,6 +5,7 @@ import Redes from './components/Redes'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
+import MoveWindows from './components/MoveWindows'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -25,10 +26,10 @@ export default function RootLayout ({
         <ClientOnly>
           <Navbar />
         </ClientOnly>
-        <div className='w-full h-full min-h-[100vh] pt-28  absolute top-0 left-0 bg-custom-bg bg-custom-opacity bg-cover'>
-          {/* bg-gradient-to-b from-blue-500 to-yellow-300 */}
+        <MoveWindows>
           {children}
-        </div>
+        </MoveWindows>
+
         <ClientOnly>
           <Redes />
           <hr />
