@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
@@ -33,7 +34,6 @@ const ItemCarrusel: React.FC<ItemCarruselProps> = ({ src, alt }) => {
         <img
           src={src}
           alt={alt}
-
         />
       </motion.div>
     </div>
