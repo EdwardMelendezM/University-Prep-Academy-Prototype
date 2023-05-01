@@ -10,7 +10,7 @@ import MoveWindows from './components/MoveWindows'
 const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Academia pre universitaria',
+  title: 'Academia ingenio',
   description: 'Academia pre universitaria cusco cusco',
   keywords: 'academia pre universitaria, academia cusco, academia unsaac'
 }
