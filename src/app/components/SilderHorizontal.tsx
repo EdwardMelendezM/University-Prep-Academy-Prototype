@@ -15,9 +15,10 @@ const SliderHorizontal: React.FC<SliderHorizontalProps> = ({
       ${bg}
       flex items-center
       justify-center
-      sm:text-3xl
-      md:text-4xl
-      text-xl
+      sm:text-2xl
+      md:text-3xl
+      xl:text-4xl
+      text-md
       text-white
       text-center
       border-0

@@ -12,14 +12,14 @@ const Navbar = () => {
       ">
         <Container>
           <div className="
-            flex flex-row items-center justify-between gap-3 md:gap-0
+            flex flex-row items-center justify-between gap-3 md:gap-0 text-sm sm:text-md md:text-lg
           ">
-            <div>CICLOS</div>
-            <div>MATRICULAS EN LINEA</div>
-            <div>RECURSOS</div>
-            <div>COLEGIO</div>
-            <div>CONÓCENOS</div>
-            <div>CONTACTO</div>
+            <div className="">CICLOS</div>
+            <div className="hidden sm:block">MATRICULAS EN LINEA</div>
+            <div className="">RECURSOS</div>
+            <div className="hidden sm:block">COLEGIO</div>
+            <div className="">CONÓCENOS</div>
+            <div className="hidden sm:block">CONTACTO</div>
           </div>
         </Container>
       </div>

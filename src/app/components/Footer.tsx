@@ -9,10 +9,11 @@ const Footer = () => {
       flex
       items-center
       justify-center
-      text-xl
+      text-md
+      sm:text-xl
       text-white
     ">
-      Av. la cultura  - Al frente de la Unsaac  |  telefono 545454
+      Av. la cultura  - Al frente de la Unsaac  |   telefono 545454
 
     </div>
   );

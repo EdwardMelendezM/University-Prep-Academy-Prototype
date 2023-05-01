@@ -28,6 +28,7 @@ export default function RootLayout({
           {children}
         </div>
         <Redes />
+        <hr />
         <Footer />
       </body>
     </html>
