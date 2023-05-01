@@ -1,8 +1,18 @@
 'use client'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const Ingresantes = () => {
+  const [isHovered, setIsHovered] = useState<boolean>(false)
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,7 +41,18 @@ const Ingresantes = () => {
 
     >
       <div className='flex flex-col gap-2 w-full'>
-        <div className='aspect-square w-full relative overflow-hidden rounded-xl'>
+        <motion.div
+          animate={{
+            scale: isHovered ? 1.1 : 1,
+            transition: {
+              duration: 0.2,
+              ease: 'linear'
+            }
+          }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className='aspect-square w-full relative overflow-hidden rounded-xl'
+        >
           <img
             src='computo.jpg'
             alt='ingresante computo general'
@@ -42,7 +63,7 @@ const Ingresantes = () => {
             group-hover:scale-110
             transition'
           />
-        </div>
+        </motion.div>
       </div>
       <div className='flex flex-col gap-2 w-full'>
         <div className='aspect-square w-full relative overflow-hidden rounded-xl'>

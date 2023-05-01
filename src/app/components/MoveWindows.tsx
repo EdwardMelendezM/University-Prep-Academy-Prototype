@@ -30,7 +30,7 @@ const MoveWindows: React.FC<MoveWindowsProps> = ({ children }) => {
           originY: 0.5
         }}
         animate={{
-          scale: isHovered ? 0.99 : 1,
+          scale: isHovered ? 1 : 1,
           transition: {
             duration: 0.2,
             ease: 'linear'
