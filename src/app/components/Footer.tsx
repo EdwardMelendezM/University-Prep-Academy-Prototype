@@ -2,9 +2,17 @@ const Footer = () => {
   return (
     <div className="
       w-full
-      h-[60px]
+      h-[5px]
+      p-6
+      bg-blue-900
+      text-center
+      flex
+      items-center
+      justify-center
+      text-xl
+      text-white
     ">
-      Matriculate ya!!
+      Av. la cultura  - Al frente de la Unsaac  |  telefono 545454
 
     </div>
   );

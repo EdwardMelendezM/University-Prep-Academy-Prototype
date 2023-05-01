@@ -4,9 +4,11 @@ import { FaFacebookMessenger } from '@react-icons/all-files/fa/FaFacebookMesseng
 import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp'
 import { FiPhone } from '@react-icons/all-files/fi/FiPhone'
 import { SiTiktok } from '@react-icons/all-files/si/SiTiktok'
+import { useRouter } from "next/navigation";
 
 
 const Redes = () => {
+  const router = useRouter()
   return (
     <div className="
       hidden
@@ -26,7 +28,7 @@ const Redes = () => {
         <FaFacebook
           style={{ color: "blue", fontSize: "2em" }}
           className="hover:border-blue-950 hover:border-b-2 hover:cursor-pointer"
-          onClick={() => { }}
+          onClick={() => { router.push('https://www.facebook.com/profile.php?id=100063746628373') }}
         />
         <FaFacebookMessenger
           style={{ color: "blue", fontSize: "2em" }}

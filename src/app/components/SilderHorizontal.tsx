@@ -11,12 +11,12 @@ const SliderHorizontal: React.FC<SliderHorizontalProps> = ({
     <div className={`
       mt-3
       w-full
-      h-[90px]
+      h-[70px]
       ${bg}
       flex items-center
       justify-center
       sm:text-3xl
-      md:text-5xl
+      md:text-4xl
       text-xl
       text-white
       text-center
