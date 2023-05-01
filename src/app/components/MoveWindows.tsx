@@ -38,7 +38,7 @@ const MoveWindows: React.FC<MoveWindowsProps> = ({ children }) => {
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className=' absolute  w-full h-full min-h-[100vh] pt-28  top-0 left-0 bg-custom-bg bg-custom-opacity bg-cover overflow-y-hidden'
+        className='  w-full h-full min-h-[100vh] pt-28  top-0 left-0 bg-custom-bg bg-custom-opacity bg-cover'
       >
         {
         children

@@ -29,7 +29,6 @@ const Ingresantes = () => {
       ssr // means to render carousel on server-side.
       infinite
       autoPlay
-
     >
       <ItemCarrusel
         src='computo.jpg'
