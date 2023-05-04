@@ -4,15 +4,15 @@ import React from 'react'
 interface ItemNavbarProps{
   text:string
   url:string
-  onClick:()=>void
-  isHidden:boolean
+  isHidden?:boolean
+  isSelect?:boolean
 }
 
 const ItemNavbar:React.FC<ItemNavbarProps> = (
   {
     text,
     url,
-    onClick,
+    isSelect,
     isHidden
   }) => {
   const router = useRouter()
@@ -25,10 +25,14 @@ const ItemNavbar:React.FC<ItemNavbarProps> = (
         transition
         text-gray-800
         hover:text-gray-400
-        ${isHidden ? 'hidden' : ''}
+        ${!isHidden ? 'hidden' : ''}
+        sm:block
+
+        ${isSelect ? 'font-bold' : ''}
         `}
     >
       {text}
+
     </div>
   )
 }

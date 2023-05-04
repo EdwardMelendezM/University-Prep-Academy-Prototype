@@ -1,42 +1,51 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import Container from '../Container'
 import ItemNavbar from './ItemNavbar'
 interface itemNavbar{
   text:string
   url:string
+  isHidden:boolean
 }
 const navbarItem: Array<itemNavbar> = [
   {
     text: 'CICLOS',
-    url: ''
+    url: '/ciclos',
+    isHidden: false
+
   },
   {
     text: 'MATRICULAS EN LINEA',
-    url: ''
+    url: '/matriculas',
+    isHidden: true
+
   },
   {
-    text: 'RECURSOS',
-    url: ''
+    text: 'INGRESANTES',
+    url: '/',
+    isHidden: false
   },
   {
     text: 'COLEGIO',
-    url: ''
+    url: '/colegio',
+    isHidden: true
   },
   {
     text: 'CONOCENOS',
-    url: ''
+    url: '/conocenos',
+    isHidden: false
   },
   {
     text: 'CONTACTO',
-    url: ''
+    url: '/contactos',
+    isHidden: true
   }
 ]
 
 const Navbar = () => {
-  const onClick = () => {
-    console.log('Onichan')
-  }
+  const path = usePathname()
+
   return (
     <div className='
       fixed w-full bg-white z-10 shadow-sm
@@ -56,8 +65,9 @@ const Navbar = () => {
                 <ItemNavbar
                   key={itemNavbar.text}
                   text={itemNavbar.text}
-                  url=''
-                  onClick={onClick}
+                  url={itemNavbar.url}
+                  isHidden={itemNavbar.isHidden}
+                  isSelect={path.split('/')[1] === itemNavbar.url.substring(1)}
                 />))
             }
 
